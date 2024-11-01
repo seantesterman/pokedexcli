@@ -65,6 +65,11 @@ func getCommands() map[string]cliCommand {
 			description: "Prints the help menu",
 			callback:    callbackHelp,
 		},
+		"inspect": {
+			name:        "inspect {pokémon_name}",
+			description: "Displays information about the chosen pokémon",
+			callback:    callbackInspect,
+		},
 		"map": {
 			name:        "map",
 			description: "Lists some location areas",
@@ -74,6 +79,11 @@ func getCommands() map[string]cliCommand {
 			name:        "mapb",
 			description: "Goes to previous map page",
 			callback:    callbackMapb,
+		},
+		"pokedex": {
+			name:        "pokedex",
+			description: "Views all the pokémon in your pokédex",
+			callback:    callbackPokedex,
 		},
 		"exit": {
 			name:        "exit",
